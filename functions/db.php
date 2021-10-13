@@ -25,7 +25,7 @@ if(!$conn){
 
 function fetchUser($userID){
     global $conn;
-    $dataf = mysqli_query($conn,"SELECT * FROM users WHERE userid='$userID'");
+    $dataf = mysqli_query($conn,"SELECT * FROM users WHERE userid='$userID");
 
     if(mysqli_num_rows($dataf) == 0){
         return False;
